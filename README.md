@@ -15,6 +15,10 @@
 3. 进入明细后开始计时并记录出货
 4. 剩余为 0 后点击“结单”保存
 
+## 单文件版
+- 直接打开 `single_html/index.html` 即可使用（无需其他文件）
+- 数据仍保存在浏览器本地，可继续使用导入/导出功能
+
 ## 数据与脚本
 - `red_items.json` / `key_items.json`：红色收集品与房卡名称
 - `scrape.js` / `scrape_keys.js`：抓取名称

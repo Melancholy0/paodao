@@ -1,0 +1,397 @@
+[
+  {
+    "id": "import_1",
+    "gameId": "QWQking",
+    "uid": "",
+    "startedAt": null,
+    "endedAt": null,
+    "durationSec": 0,
+    "timer": {
+      "running": false,
+      "startAt": null,
+      "elapsedSec": 0
+    },
+    "planned": 1000.0,
+    "currentBalance": 7830.0,
+    "startBalance": 6830.0,
+    "items": [
+      {
+        "category": "红色收集品",
+        "name": "挂耳",
+        "qty": 1,
+        "unitW": 34.0,
+        "totalW": 34.0
+      },
+      {
+        "category": "房卡",
+        "name": "一号审讯",
+        "qty": 1,
+        "unitW": 50.0,
+        "totalW": 50.0
+      },
+      {
+        "category": "红色收集品",
+        "name": "人头",
+        "qty": 1,
+        "unitW": 115.0,
+        "totalW": 115.0
+      },
+      {
+        "category": "红色收集品",
+        "name": "实验数据",
+        "qty": 1,
+        "unitW": 20.0,
+        "totalW": 20.0
+      },
+      {
+        "category": "房卡",
+        "name": "医务室7",
+        "qty": 1,
+        "unitW": 77.0,
+        "totalW": 77.0
+      },
+      {
+        "category": "红色收集品",
+        "name": "处理器2",
+        "qty": 1,
+        "unitW": 20.0,
+        "totalW": 20.0
+      },
+      {
+        "category": "红色收集品",
+        "name": "劳2",
+        "qty": 1,
+        "unitW": 36.0,
+        "totalW": 36.0
+      }
+    ],
+    "map": "",
+    "mode": "",
+    "note": "导入自Excel",
+    "remaining": 0,
+    "progressPercent": 100
+  },
+  {
+    "id": "import_2",
+    "gameId": "我真没招了",
+    "uid": "181978456760347983872",
+    "startedAt": null,
+    "endedAt": 21600000,
+    "durationSec": 21600,
+    "timer": {
+      "running": false,
+      "startAt": null,
+      "elapsedSec": 0
+    },
+    "planned": 2000.0,
+    "currentBalance": 2100.0,
+    "startBalance": 100.0,
+    "items": [
+      {
+        "category": "红色收集品",
+        "name": "金蛋",
+        "qty": 1,
+        "unitW": 29.0,
+        "totalW": 29.0
+      },
+      {
+        "category": "房卡",
+        "name": "售票办公室",
+        "qty": 1,
+        "unitW": 40.0,
+        "totalW": 40.0
+      },
+      {
+        "category": "红色收集品",
+        "name": "人头",
+        "qty": 1,
+        "unitW": 108.0,
+        "totalW": 108.0
+      },
+      {
+        "category": "红色收集品",
+        "name": "劳力士",
+        "qty": 3,
+        "unitW": 18.0,
+        "totalW": 54.0
+      },
+      {
+        "category": "房卡",
+        "name": "浮力医务",
+        "qty": 1,
+        "unitW": 28.5,
+        "totalW": 28.5
+      },
+      {
+        "category": "房卡",
+        "name": "宿舍201",
+        "qty": 1,
+        "unitW": 32.0,
+        "totalW": 32.0
+      },
+      {
+        "category": "红色收集品",
+        "name": "怀表",
+        "qty": 1,
+        "unitW": 18.5,
+        "totalW": 18.5
+      },
+      {
+        "category": "房卡",
+        "name": "总裁会议室",
+        "qty": 1,
+        "unitW": 255.0,
+        "totalW": 255.0
+      },
+      {
+        "category": "红色收集品",
+        "name": "量子",
+        "qty": 1,
+        "unitW": 24.0,
+        "totalW": 24.0
+      },
+      {
+        "category": "房卡",
+        "name": "车站售票",
+        "qty": 1,
+        "unitW": 3.3,
+        "totalW": 3.3
+      },
+      {
+        "category": "红色收集品",
+        "name": "实验数据",
+        "qty": 1,
+        "unitW": 20.0,
+        "totalW": 20.0
+      },
+      {
+        "category": "房卡",
+        "name": "变电宿舍",
+        "qty": 1,
+        "unitW": 3.3,
+        "totalW": 3.3
+      },
+      {
+        "category": "房卡",
+        "name": "地下通道",
+        "qty": 1,
+        "unitW": 20.0,
+        "totalW": 20.0
+      },
+      {
+        "category": "红色收集品",
+        "name": "金条",
+        "qty": 1,
+        "unitW": 28.0,
+        "totalW": 28.0
+      }
+    ],
+    "map": "",
+    "mode": "",
+    "note": "导入自Excel",
+    "remaining": 0,
+    "progressPercent": 100
+  },
+  {
+    "id": "import_3",
+    "gameId": "我真没招了",
+    "uid": "181978456760347983872",
+    "startedAt": null,
+    "endedAt": 21600000,
+    "durationSec": 21600,
+    "timer": {
+      "running": false,
+      "startAt": null,
+      "elapsedSec": 0
+    },
+    "planned": 2000.0,
+    "currentBalance": 2050.0,
+    "startBalance": 50.0,
+    "items": [
+      {
+        "category": "房卡",
+        "name": "地下通道",
+        "qty": 1,
+        "unitW": 20.0,
+        "totalW": 20.0
+      }
+    ],
+    "map": "",
+    "mode": "",
+    "note": "导入自Excel",
+    "remaining": 0,
+    "progressPercent": 100
+  },
+  {
+    "id": "import_4",
+    "gameId": "雷斯的右腿",
+    "uid": "63758718266510000128",
+    "startedAt": 1759939200000,
+    "endedAt": 1759968000000,
+    "durationSec": 28800,
+    "timer": {
+      "running": false,
+      "startAt": null,
+      "elapsedSec": 0
+    },
+    "planned": 3000.0,
+    "currentBalance": 3200.0,
+    "startBalance": 200.0,
+    "items": [
+      {
+        "category": "红色收集品",
+        "name": "劳力士",
+        "qty": 3,
+        "unitW": 18.0,
+        "totalW": 54.0
+      },
+      {
+        "category": "房卡",
+        "name": "东城",
+        "qty": 1,
+        "unitW": 28.0,
+        "totalW": 28.0
+      },
+      {
+        "category": "红色收集品",
+        "name": "坦克",
+        "qty": 1,
+        "unitW": 186.0,
+        "totalW": 186.0
+      },
+      {
+        "category": "红色收集品",
+        "name": "鱼子酱",
+        "qty": 1,
+        "unitW": 18.0,
+        "totalW": 18.0
+      },
+      {
+        "category": "房卡",
+        "name": "医务室",
+        "qty": 2,
+        "unitW": 11.0,
+        "totalW": 22.0
+      },
+      {
+        "category": "红色收集品",
+        "name": "实现数据",
+        "qty": 1,
+        "unitW": 19.0,
+        "totalW": 19.0
+      },
+      {
+        "category": "房卡",
+        "name": "旅店用餐",
+        "qty": 1,
+        "unitW": 200.0,
+        "totalW": 200.0
+      },
+      {
+        "category": "红色收集品",
+        "name": "挂耳咖啡",
+        "qty": 3,
+        "unitW": 35.0,
+        "totalW": 105.0
+      },
+      {
+        "category": "红色收集品",
+        "name": "处理器",
+        "qty": 4,
+        "unitW": 18.0,
+        "totalW": 72.0
+      },
+      {
+        "category": "房卡",
+        "name": "西城",
+        "qty": 1,
+        "unitW": 19.0,
+        "totalW": 19.0
+      },
+      {
+        "category": "红色收集品",
+        "name": "金条",
+        "qty": 2,
+        "unitW": 28.0,
+        "totalW": 56.0
+      },
+      {
+        "category": "房卡",
+        "name": "军营保管",
+        "qty": 1,
+        "unitW": 39.0,
+        "totalW": 39.0
+      }
+    ],
+    "map": "",
+    "mode": "",
+    "note": "导入自Excel",
+    "remaining": 0,
+    "progressPercent": 100
+  },
+  {
+    "id": "import_5",
+    "gameId": "红温李明轩",
+    "uid": "184901362497862008832",
+    "startedAt": 1759939200000,
+    "endedAt": 1759948200000,
+    "durationSec": 9000,
+    "timer": {
+      "running": false,
+      "startAt": null,
+      "elapsedSec": 0
+    },
+    "planned": 1000.0,
+    "currentBalance": 1009.0,
+    "startBalance": 9.0,
+    "items": [
+      {
+        "category": "红色收集品",
+        "name": "金条",
+        "qty": 4,
+        "unitW": 28.0,
+        "totalW": 112.0
+      },
+      {
+        "category": "房卡",
+        "name": "牧场管理",
+        "qty": 1,
+        "unitW": 3.3,
+        "totalW": 3.3
+      },
+      {
+        "category": "红色收集品",
+        "name": "人头",
+        "qty": 1,
+        "unitW": 108.0,
+        "totalW": 108.0
+      },
+      {
+        "category": "红色收集品",
+        "name": "实验数据",
+        "qty": 1,
+        "unitW": 19.8,
+        "totalW": 19.8
+      },
+      {
+        "category": "房卡",
+        "name": "医务室",
+        "qty": 2,
+        "unitW": 11.7,
+        "totalW": 23.4
+      },
+      {
+        "category": "红色收集品",
+        "name": "军用终端",
+        "qty": 1,
+        "unitW": 33.7,
+        "totalW": 33.7
+      }
+    ],
+    "map": "",
+    "mode": "",
+    "note": "导入自Excel",
+    "remaining": 0,
+    "progressPercent": 100
+  }
+]

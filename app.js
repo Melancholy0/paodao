@@ -233,7 +233,7 @@ const KEY_ITEMS = [
 const SUGGESTIONS = {
   红色收集品: RED_ITEMS,
   房卡: KEY_ITEMS,
-  其他: [],
+  其他: ["盒装挂耳咖啡", "可编程处理器"],
 };
 
 const PLACEHOLDERS = {
