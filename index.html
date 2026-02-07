@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>跑刀成果记录</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="page-header">
+        <div>
+          <h1>跑刀成果记录</h1>
+          <p>用更轻量的方式记录本次跑刀目标与摸金明细。</p>
+        </div>
+      </header>
+
+      <section class="card">
+        <h2>本次跑刀概览</h2>
+        <div class="grid">
+          <label class="field">
+            <span>本次准备跑多少哈夫币</span>
+            <input type="number" id="planned" placeholder="例如 2000" min="0" />
+          </label>
+          <label class="field">
+            <span>目前跑了多少哈夫币</span>
+            <input type="number" id="current" placeholder="例如 1200" min="0" />
+          </label>
+          <label class="field">
+            <span>账号上有多少哈夫币</span>
+            <input type="number" id="account" placeholder="例如 6800" min="0" />
+          </label>
+          <div class="field result">
+            <span>还剩下多少哈夫币</span>
+            <strong id="remaining">0</strong>
+          </div>
+        </div>
+        <div class="note">还剩下 = 本次准备 - 目前跑了。</div>
+      </section>
+
+      <section class="card">
+        <h2>摸金明细</h2>
+        <div class="entry">
+          <label>
+            <span>分类</span>
+            <select id="category">
+              <option value="小红">小红</option>
+              <option value="房卡">房卡</option>
+              <option value="大红">大红</option>
+            </select>
+          </label>
+          <label class="grow">
+            <span>名称</span>
+            <input type="text" id="item-name" placeholder="例如 医疗办公室" />
+          </label>
+          <label>
+            <span>价值（哈夫币）</span>
+            <input type="number" id="item-value" placeholder="例如 29" min="0" />
+          </label>
+          <button id="add-item" type="button">添加</button>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>分类</th>
+                <th>名称</th>
+                <th>价值（哈夫币）</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="item-body"></tbody>
+          </table>
+        </div>
+
+        <div class="totals">
+          <div>
+            <span>小红合计</span>
+            <strong id="sum-small">0</strong>
+          </div>
+          <div>
+            <span>房卡合计</span>
+            <strong id="sum-card">0</strong>
+          </div>
+          <div>
+            <span>大红合计</span>
+            <strong id="sum-big">0</strong>
+          </div>
+          <div class="overall">
+            <span>总计</span>
+            <strong id="sum-total">0</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="card tips">
+        <h2>使用建议</h2>
+        <ul>
+          <li>所有数据仅保存在你的浏览器本地，不会上传。</li>
+          <li>每次跑刀结束时补全“目前跑了多少”和摸金明细即可。</li>
+          <li>可以按分类快速统计小红、房卡、大红价值总和。</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
