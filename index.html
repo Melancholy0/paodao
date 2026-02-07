@@ -3,107 +3,264 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>跑刀成果记录</title>
+    <title>鼠鼠日记</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="container">
       <header class="page-header">
         <div>
-          <h1>跑刀成果记录</h1>
-          <p>用更轻量的方式记录本次跑刀目标与摸金明细。</p>
+          <h1 id="home-title" class="home-title">🐭 鼠鼠日记</h1>
+        </div>
+        <div class="page-actions">
+          <button id="nav-history" type="button">📜 历史记录</button>
+          <button id="nav-start" type="button">🚀 开始跑刀</button>
         </div>
       </header>
 
-      <section class="card">
-        <h2>本次跑刀概览</h2>
-        <div class="grid">
-          <label class="field">
-            <span>本次准备跑多少哈夫币</span>
-            <input type="number" id="planned" placeholder="例如 2000" min="0" />
-          </label>
-          <label class="field">
-            <span>目前跑了多少哈夫币</span>
-            <input type="number" id="current" placeholder="例如 1200" min="0" />
-          </label>
-          <label class="field">
-            <span>账号上有多少哈夫币</span>
-            <input type="number" id="account" placeholder="例如 6800" min="0" />
-          </label>
-          <div class="field result">
-            <span>还剩下多少哈夫币</span>
-            <strong id="remaining">0</strong>
+      <section id="history-view" class="view">
+        <section class="card">
+          <h2>📚 历史跑刀记录</h2>
+          <div class="home-hero">
+            <div>
+              <p class="hero-title">今天也要快乐出货！</p>
+              <p class="hero-subtitle">记录跑刀、统计进度、回顾每一次高光。</p>
+            </div>
+            <div class="hero-illustration" aria-hidden="true">
+              <div class="hamster"></div>
+              <div class="hamster-ear left"></div>
+              <div class="hamster-ear right"></div>
+              <div class="hamster-cheek left"></div>
+              <div class="hamster-cheek right"></div>
+              <div class="hamster-eye left"></div>
+              <div class="hamster-eye right"></div>
+              <div class="hamster-nose"></div>
+              <div class="hamster-paw left"></div>
+              <div class="hamster-paw right"></div>
+              <div class="sparkle s1"></div>
+              <div class="sparkle s2"></div>
+            </div>
+            <button id="quick-start" type="button">✨ 立即开始</button>
           </div>
-        </div>
-        <div class="note">还剩下 = 本次准备 - 目前跑了。</div>
+          <div class="stats-grid" id="stats-grid"></div>
+          <div class="history-tools">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="🔍 搜索 游戏ID / UID / 日期"
+            />
+            <button id="export-data" type="button">📦 导出</button>
+            <label class="import-btn">
+              📥 导入
+              <input id="import-data" type="file" accept="application/json" />
+            </label>
+            <button id="clear-search" type="button">🧹 清空</button>
+          </div>
+          <div id="history-list" class="history-list"></div>
+        </section>
       </section>
 
-      <section class="card">
-        <h2>摸金明细</h2>
-        <div class="entry">
-          <label>
-            <span>分类</span>
-            <select id="category">
-              <option value="小红">小红</option>
-              <option value="房卡">房卡</option>
-              <option value="大红">大红</option>
-            </select>
-          </label>
-          <label class="grow">
-            <span>名称</span>
-            <input type="text" id="item-name" placeholder="例如 医疗办公室" />
-          </label>
-          <label>
-            <span>价值（哈夫币）</span>
-            <input type="number" id="item-value" placeholder="例如 29" min="0" />
-          </label>
-          <button id="add-item" type="button">添加</button>
-        </div>
-
-        <div class="table-wrapper">
-          <table>
-            <thead>
-              <tr>
-                <th>分类</th>
-                <th>名称</th>
-                <th>价值（哈夫币）</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody id="item-body"></tbody>
-          </table>
-        </div>
-
-        <div class="totals">
-          <div>
-            <span>小红合计</span>
-            <strong id="sum-small">0</strong>
+      <section id="start-view" class="view hidden">
+        <section class="card">
+          <h2>🚀 开始跑刀</h2>
+          <div class="grid">
+            <label class="field">
+              <span>游戏ID</span>
+              <input type="text" id="game-id" placeholder="例如 Suryxin" />
+            </label>
+            <label class="field">
+              <span>UID</span>
+              <input type="text" id="uid" placeholder="例如 100200300" />
+            </label>
           </div>
-          <div>
-            <span>房卡合计</span>
-            <strong id="sum-card">0</strong>
+          <div class="form-actions">
+            <button id="start-run" type="button">✅ 进入跑刀明细</button>
           </div>
-          <div>
-            <span>大红合计</span>
-            <strong id="sum-big">0</strong>
-          </div>
-          <div class="overall">
-            <span>总计</span>
-            <strong id="sum-total">0</strong>
-          </div>
-        </div>
+        </section>
       </section>
 
-      <section class="card tips">
-        <h2>使用建议</h2>
-        <ul>
-          <li>所有数据仅保存在你的浏览器本地，不会上传。</li>
-          <li>每次跑刀结束时补全“目前跑了多少”和摸金明细即可。</li>
-          <li>可以按分类快速统计小红、房卡、大红价值总和。</li>
-        </ul>
+      <section id="detail-view" class="view hidden">
+        <section class="card run-header">
+          <div>
+            <h2>当前跑刀</h2>
+            <div class="run-meta">
+              <span id="current-run-id">游戏ID：-</span>
+              <span id="current-run-uid">UID：-</span>
+              <span id="current-run-balance">当前账号：-</span>
+            </div>
+          </div>
+          <div class="run-actions">
+          <button id="finish-run" type="button" disabled>🎉 结单</button>
+            <button id="back-history" type="button">🏠 返回历史</button>
+          </div>
+        </section>
+        <section class="card">
+          <h2>📈 本次跑刀概览</h2>
+          <div class="grid">
+            <label class="field">
+              <span>本次目标（W）</span>
+              <input type="number" id="planned" placeholder="例如 1000" />
+            </label>
+            <label class="field">
+              <span>开始时账号余额（W）</span>
+              <input type="number" id="account" placeholder="例如 500" />
+            </label>
+            <label class="field">
+              <span>当前账号余额（W）</span>
+              <input type="number" id="current" placeholder="例如 580" />
+            </label>
+            <div class="field result progress-field">
+              <span>实际进度（W）</span>
+              <strong id="progress">0</strong>
+              <span id="progress-percent">0%</span>
+              <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+              </div>
+            </div>
+            <div class="field result">
+              <span>还剩下多少（W）</span>
+              <strong id="remaining">0</strong>
+            </div>
+          </div>
+          <div class="note">
+            实际进度 = （当前余额 - 开始余额） + 出货总计；剩余 = 目标 - 实际进度。
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>⏱️ 跑刀计时</h2>
+          <div class="timer-row">
+            <div class="timer-display" id="timer-display">00:00:00</div>
+            <div class="timer-actions">
+              <button id="timer-start" type="button">▶️ 开始计时</button>
+              <button id="timer-stop" type="button">⏹️ 结束计时</button>
+            </div>
+            <div class="timer-meta">
+              <span>本次耗时</span>
+              <strong id="timer-total">00:00:00</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>🎁 出货记录</h2>
+          <div class="entry">
+            <label>
+              <span>分类</span>
+              <select id="category">
+                <option value="红色收集品">红色收集品</option>
+                <option value="房卡">房卡</option>
+                <option value="其他">其他</option>
+              </select>
+            </label>
+            <label class="grow">
+              <span>名称（支持自动补全）</span>
+              <input
+                type="text"
+                id="item-name"
+                list="name-suggestions"
+                placeholder="请选择分类后输入名称"
+              />
+              <datalist id="name-suggestions"></datalist>
+            </label>
+            <label>
+              <span>数量</span>
+              <input type="number" id="item-qty" value="1" min="1" step="1" />
+            </label>
+            <label>
+              <span>单价（W）</span>
+              <input type="number" id="item-value" />
+            </label>
+            <button id="add-item" type="button">添加</button>
+          </div>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>分类</th>
+                  <th>名称</th>
+                  <th>数量</th>
+                  <th>单价（W）</th>
+                  <th>合计（W）</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="item-body"></tbody>
+            </table>
+          </div>
+
+          <div class="totals">
+            <div>
+              <span>红色收集品合计（W）</span>
+              <strong id="sum-red">0</strong>
+            </div>
+            <div>
+              <span>房卡合计（W）</span>
+              <strong id="sum-card">0</strong>
+            </div>
+            <div>
+              <span>其他合计（W）</span>
+              <strong id="sum-other">0</strong>
+            </div>
+            <div class="overall">
+              <span>总计（W）</span>
+              <strong id="sum-total">0</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>📝 本次备注</h2>
+          <div class="grid">
+            <label class="field">
+              <span>地图/区域</span>
+              <input type="text" id="run-map" placeholder="例如 零号大坝" />
+            </label>
+            <label class="field">
+              <span>队伍/模式</span>
+              <input type="text" id="run-mode" placeholder="例如 单排" />
+            </label>
+            <label class="field">
+              <span>本次总结</span>
+              <input type="text" id="run-note" placeholder="例如 刷红区首选西楼" />
+            </label>
+          </div>
+        </section>
+
+        <section class="card tips">
+          <h2>🐾 使用建议</h2>
+          <ul>
+            <li>支持负收入：单价可填负数。</li>
+            <li>自动补全来自公开攻略，可能不完整，可继续补充。</li>
+            <li>可按分类快速统计红色收集品、房卡、其他价值总和。</li>
+          </ul>
+        </section>
       </section>
     </main>
 
+    <div id="finish-modal" class="modal hidden">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h3>结单完成</h3>
+          <button id="modal-close" type="button">×</button>
+        </div>
+        <div class="modal-body" id="modal-body"></div>
+        <div class="modal-actions">
+          <button id="modal-confirm" type="button">返回首页</button>
+        </div>
+      </div>
+    </div>
+    <footer class="site-footer">
+      微信公众号：
+      <span class="wechat-badge">
+        茉莉雪芽
+        <span class="wechat-id">（ID: gh_702220597c76）</span>
+        <span class="wechat-qr" aria-hidden="true">
+          <img src="wxgzh.jpg" alt="茉莉雪芽公众号二维码" />
+        </span>
+      </span>
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>
